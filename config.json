@@ -1,0 +1,44 @@
+{
+"title": "Ricardo de Arruda",
+"subTitle": null,
+"baseURL": "https://dearruda.me",
+"googleAnalytics": "UA-129215154-4",
+"copyright": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+"defaultContentLanguage": "en",
+"themeColor": "#494f5c",
+"languageCode": "en-us",
+"description": "Ricardo de Arruda personal web-page",
+"footerCopyright": " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-NC 4.0</a>",
+"author": {
+  "name": "Ricardo de Arruda"
+  },
+"dateform": "Jan 2, 2006",
+"dateformNum": "2006-01-02",
+"dateformNumTime": "2006-01-02 15:04 -0700",
+"dateformShort": "Jan 2",
+"iam": {
+  "Iam": "I'm a",
+  "IamList": ["Full Stack Dev", "VIM fanboy", "minimalist", "FOSS advocate ", "pythoneer 🐍"]
+},
+"social": {
+  "cv": {
+    "url": "about"
+  },
+  "github": {
+    "url": "https://github.com/arrudaricardo/"
+  },
+  "linkedin": {
+    "url": "https://www.linkedin.com/in/ricardodearruda/"
+  },
+  "instagram": {
+    "url": "https://www.instagram.com/ricarruda7/"
+  },
+  "devto": {
+    "url": "https://dev.to/arrudaricardo/"
+  },
+  "email": {
+    "url": "mailto:settiricardo@gmail.com?subject=Hey%20Ricardo.&body="
+  }
+}
+}
+
