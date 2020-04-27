@@ -29,16 +29,8 @@
   opacity: 0.9;
 }
 
-.home-social a {
-  margin: 0 0.2em;
-}
 .home-nav {
   opacity: 0.8;
-}
-.home-nav a {
-  display: block;
-  text-align: center;
-  margin-top: 0.5em;
 }
 .home-footer {
   text-align: center;
@@ -46,6 +38,13 @@
   line-height: normal;
   opacity: 0.6;
 }
+
 .home-footer p {
   margin-top: 0;
+}
+
+.home-nav a {
+  display: block;
+  text-align: center;
+  margin-top: 0.5em;
 }

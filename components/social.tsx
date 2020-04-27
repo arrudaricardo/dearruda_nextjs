@@ -15,10 +15,10 @@ const Home = () => {
     <div className={ style["social-home"]}>
     { Object.keys(socialConf).map(social => {
       const link = socialConf[social].url
-      const Icon = socialIcons.get(social)
+      const Icon = socialIcons[social]
       return (
-      <a href={link} className={style['icon']}>
-        {Icon}
+      <a className={style['link']} href={link}>
+        <Icon className={style['icon']}/>
       </a>
       )
     })
