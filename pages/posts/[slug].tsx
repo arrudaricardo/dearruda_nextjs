@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import { GetStaticProps } from 'next'
-import getPosts, {Posts} from '../../lib/getPosts'
+import {Posts, getPosts} from '../../lib/postHelper'
 
 interface Post {
   post: Posts

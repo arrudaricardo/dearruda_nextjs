@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { ReactElement } from 'react'
+import styles from '../styles/layout.module.css'
 
 type Props = {
   children: ReactElement,
@@ -14,7 +15,9 @@ const Layout = ({children, title}: Props) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
+    <main className={styles.main}>
       {children}
+    </main>
     <footer>{'I`m here to stay'}</footer>
     </>
   )
