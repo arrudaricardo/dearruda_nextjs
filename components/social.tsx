@@ -17,7 +17,7 @@ const Home = () => {
       const link = socialConf[social].url
       const Icon = socialIcons[social]
       return (
-      <a className={style['link']} href={link}>
+      <a key={social} className={style['link']} href={link}>
         <Icon className={style['icon']}/>
       </a>
       )
