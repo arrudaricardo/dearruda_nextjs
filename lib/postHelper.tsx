@@ -13,7 +13,7 @@ export interface Posts {
   content: string
 }
 
-const getPosts = (): Posts[] => {
+export const getPosts = (): Posts[] => {
   const files: Array<string> = readdirSync(`content/posts`)
 
   return files.map((filename) => {
@@ -41,4 +41,16 @@ const getPosts = (): Posts[] => {
   })
 }
   
-export default getPosts
+export const postsExist = () => {
+  // const posts = true //opendirSync('content/posts') 
+  const posts = readdirSync(`${process.cwd()}/content/posts`)
+  if (posts.length === 0) return false
+  const hasPosts = posts.some(post => {
+    if (post.search(/\.md$/) !== -1){
+      return true 
+    } else {
+      return false
+    }
+  })
+  return hasPosts
+}
