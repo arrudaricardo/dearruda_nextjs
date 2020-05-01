@@ -1,21 +1,29 @@
 import config from '../config.json'
 import style from '../styles/home.module.css'
 import { ReactElement } from 'react'
+import Link from 'next/link'
+
 
 type Props = {
+  hasPosts?: boolean,
   children: ReactElement
 }
 
-const Home = ({children}: Props) => {
+const Home = ({hasPosts, children}: Props ) => {
   return (
-  <div className={style.home}>
-    <div className={ style["home-center"] }>
-        <h1 className={ style["home-title"] }>{ config.title }</h1>
-        { children }
-        { config.subTitle && <p className={ style["home-subtitle"] } >{ config.subTitle }</p> }
-    </div>
+  <div className={ style.center}>
+      <h1 className={ style.title}>{ config.title }</h1>
+      { children }
+      { config.subTitle && <p className={ style.subtitle} >{ config.subTitle }</p> }
+      {hasPosts && 
+      <Link href='/posts'>
+          <a className={style.posts}>Posts</a>
+      </Link>
+      }
   </div>
   )
 }
+
+
 
 export default Home
