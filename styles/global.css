@@ -97,10 +97,3 @@ table th {
   font-weight: 700;
   vertical-align: bottom;
 }
-
-.{
-  display: inline-block;
-  vertical-align: -0.125em;
-  width: 1em;
-  height: 1em;
-}

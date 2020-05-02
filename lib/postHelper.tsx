@@ -7,6 +7,7 @@ export interface Posts {
     [T:string]: any
     date?: string,
     title?: string,
+    description?: string
   }
   slug: string,
   path: string
@@ -14,7 +15,7 @@ export interface Posts {
 }
 
 export const getPosts = (): Posts[] => {
-  const files: Array<string> = readdirSync(`content/posts`)
+  const files: Array<string> = readdirSync(`${process.cwd()}/content/posts`)
 
   return files.map((filename) => {
     const path = `content/posts/${filename}`

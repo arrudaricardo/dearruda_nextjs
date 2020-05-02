@@ -44,5 +44,5 @@ function genPostsItems() {
 
 export function genRssFile() {
   const rss = genLayout(title, description, baseURL, genPostsItems());
-  writeFileSync(`${process.cwd()}/public/rss.xml`, rss);
+  return writeFileSync(`${process.cwd()}/public/rss.xml`, rss);
 }
