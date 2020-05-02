@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import { GetStaticProps } from 'next'
 import { postsExist } from '../lib/postHelper'
 import { author, footerCopyright, baseURL } from '../config.json'
+import {genRssFile} from '../lib/genRss'
 
 type Index = {
   footer?: {
@@ -27,7 +28,7 @@ export default function Index({ hasPosts, footer }: Index) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-
+  genRssFile()
   const dateNow = new Date()
   const hasPosts = postsExist()
   const footer = {
