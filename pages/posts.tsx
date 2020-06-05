@@ -17,6 +17,8 @@ type Props = {
   }[]
 }
 
+// TODO: display posts in date order 
+
 const Posts = ({posts}: Props) => {
   return (
     <Layout title='Posts'>
@@ -24,7 +26,12 @@ const Posts = ({posts}: Props) => {
         <h1>Posts</h1>
         <div className={styles.group}>
         <ul className={styles.list} >
-        {posts.map(post => (
+        {posts.sort( (a,b) => {
+         const dateA = new Date(a.frontmatter.date)
+         const dateB = new Date(b.frontmatter.date) 
+         console.log(dateA, dateB)
+        return Number(dateB) - Number(dateA)
+        }).map(post => (
             <li className={styles.item}key={post.slug}>
               <a className={styles.itemA} href={`posts/${post.slug}`}>
                 <span>{post.frontmatter.title}</span>
