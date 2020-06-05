@@ -1,37 +1,51 @@
 import ReactMarkdown from 'react-markdown'
 import { GetStaticProps } from 'next'
-import {Posts, getPosts} from '../../lib/postHelper'
+import Prism from 'prismjs'
+import Layout from '../../components/layout'
+import { Posts, getPosts } from '../../lib/postHelper'
 
+
+function CodeBlock({ language, value }: { language: string, value: string }) {
+  const prismLanguages = Prism.languages[language]
+  const html = prismLanguages? Prism.highlight(value, prismLanguages , language) : value
+  return (<pre>
+    <code 
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  </pre>)
+}
 interface Post {
   post: Posts
 }
 
-export default function PostTemplate({post}: Post) {
+export default function PostTemplate({ post }: Post) {
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <ReactMarkdown source={post.content}/>
-    </div>
+    <Layout title={post.frontmatter.title!}>
+      <>
+        <h1>{post.frontmatter.title}</h1>
+        <ReactMarkdown source={post.content} renderers={{ code: CodeBlock }} />
+      </>
+    </Layout>
   )
 }
 
 export async function getStaticPaths() {
   const posts = getPosts()
-  const paths = posts.map(el => ({params: {slug: el.slug}}))
- return {
+  const paths = posts.map(el => ({ params: { slug: el.slug } }))
+  return {
     paths,
     fallback: false
   };
 }
 
-export const getStaticProps: GetStaticProps = async ({params}) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const posts = getPosts()
   if (params?.slug === undefined) throw new Error('Params not found')
   const post = posts.find(post => (post.slug === params.slug))
 
   return {
     props: {
-      post 
+      post
     },
   };
 }
