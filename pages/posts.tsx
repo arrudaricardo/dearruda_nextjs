@@ -17,8 +17,6 @@ type Props = {
   }[]
 }
 
-// TODO: display posts in date order 
-
 const Posts = ({posts}: Props) => {
   return (
     <Layout title='Posts'>
