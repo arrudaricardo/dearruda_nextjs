@@ -21,7 +21,9 @@ const Layout = ({ children, title, footer }: Props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        {children}
+      </main>
       {footer && (
         <footer className={styles.footer}>
           <p className={styles.footerP}>
