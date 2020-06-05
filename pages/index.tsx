@@ -1,10 +1,11 @@
 import Home from '../components/home'
 import Social from '../components/social'
 import Layout from '../components/layout'
+import Iam from '../components/iam'
 import { GetStaticProps } from 'next'
 import { postsExist } from '../lib/postHelper'
 import { author, footerCopyright, baseURL } from '../config.json'
-import {genRssFile} from '../lib/genRss'
+import { genRssFile } from '../lib/genRss'
 
 type Index = {
   footer?: {
@@ -21,7 +22,10 @@ export default function Index({ hasPosts, footer }: Index) {
   return (
     <Layout title='Home' footer={footer}>
       <Home hasPosts={hasPosts}>
-        <Social />
+        <>
+          <Iam />
+          <Social />
+        </>
       </Home>
     </Layout>
   )
