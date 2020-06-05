@@ -1,4 +1,28 @@
+.root {
+  /* margin: auto; */
+  display: grid;
+  align-content: space-around;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #c6cddb;
+}
+.list {
+  display: flex;
+  align-content: space-around;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+
+}
+
+.listItems {
+  padding-right: .5rem;
+}
+
 #Iam-subtitle {
+
   text-align: center;
   font-style: normal;
   opacity: 0.9;
