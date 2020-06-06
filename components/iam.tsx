@@ -29,10 +29,11 @@ const Iam = () => {
       leave: { transform: 'translate3d(0,30px,0)', opacity: 0 },
     })
 
-  useEffect(() => void setInterval(() => setIam(state => {
+
+  useEffect(() => void setTimeout(() => setIam(state => {
     let i = iamList[state.index + 1] ? state.index + 1: 0
     return (iamList[i])
-  }), 2500), [])
+  }), 2500), [iam])
 
   return (
     <div className={style.root}>
