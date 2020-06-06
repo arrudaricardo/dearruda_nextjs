@@ -27,7 +27,6 @@ const Posts = ({posts}: Props) => {
         {posts.sort( (a,b) => {
          const dateA = new Date(a.frontmatter.date)
          const dateB = new Date(b.frontmatter.date) 
-         console.log(dateA, dateB)
         return Number(dateB) - Number(dateA)
         }).map(post => (
             <li className={styles.item}key={post.slug}>
