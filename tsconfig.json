@@ -39,6 +39,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "lib/genRss.ts"
+    "**/*.tsx", "lib/genRss.ts", "pages/_document.js"
   ]
 }
