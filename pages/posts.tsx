@@ -20,7 +20,7 @@ type Props = {
 const Posts = ({posts}: Props) => {
   return (
     <Layout title='Posts'>
-      <div>
+      <div className={styles.root}>
         <h1>Posts</h1>
         <div className={styles.group}>
         <ul className={styles.list} >

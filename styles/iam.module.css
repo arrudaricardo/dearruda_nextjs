@@ -8,6 +8,7 @@
   font-size: 20px;
   line-height: 25px;
   color: #c6cddb;
+  padding-bottom: .3rem;
 }
 .list {
   display: flex;

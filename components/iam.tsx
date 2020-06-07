@@ -4,6 +4,7 @@ import { iam } from '../config.json'
 import style from '../styles/iam.module.css'
 const { IamList } = iam
 
+IamList as string[][]
 const iamList = IamList.map(([a, b], i) => {
   const [prevA] = IamList[i - 1] ?? [null]
   return {
@@ -34,6 +35,7 @@ const Iam = () => {
   useEffect(() => {
     const timeout = setTimeout(() => setIam(state => {
       let i = iamList[state.index + 1] ? state.index + 1 : 0
+      // window.history.pushState({}, 'null', iamList[i].second.replace(/ /g, '-'))
       return (iamList[i])
     }), 2500)
     return () => {
