@@ -10,7 +10,7 @@ interface Tsocial {
 const socialConf: Tsocial = social
 
 
-const Home = () => {
+const Social = () => {
   return (
     <div className={ style["social-home"]}>
     { Object.keys(socialConf).map(social => {
@@ -28,4 +28,4 @@ const Home = () => {
 }
 
 
-export default Home
+export default Social

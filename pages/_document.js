@@ -10,6 +10,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
           <meta name="theme-color" content="#494f5c" />
           <meta name="msapplication-navbutton-color" content="#494f5c" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
