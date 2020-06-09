@@ -64,6 +64,5 @@ const Layout = ({ children, title, footer, mainStyle}: Props) => {
     </div>
   );
 };
-//TODO: gen href for rss
 
 export default Layout;
