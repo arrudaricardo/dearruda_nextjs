@@ -2,6 +2,7 @@ import Home from '../components/home'
 import Social from '../components/social'
 import Layout from '../components/layout'
 import Iam from '../components/iam'
+import Footer from '../components/Footer'
 import { GetStaticProps } from 'next'
 import { postsExist } from '../lib/postHelper'
 import { author, footerCopyright, baseURL } from '../config.json'
@@ -20,13 +21,16 @@ type Index = {
 
 export default function Index({ hasPosts, footer }: Index) {
   return (
-    <Layout title='Home' footer={footer}>
-      <Home hasPosts={hasPosts}>
-        <>
-          <Iam />
-          <Social />
-        </>
-      </Home>
+    <Layout title='Home'>
+      <>
+        <Home hasPosts={hasPosts}>
+          <>
+            <Iam />
+            <Social />
+          </>
+        </Home>
+        <Footer footer={footer} display='fixed' />
+      </>
     </Layout>
   )
 }

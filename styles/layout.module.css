@@ -39,20 +39,6 @@
   margin: 3rem 0 0;
 }
 
-.footer {
-  position: relative;
-  clear: both;
-  align-self: center;
-  bottom: 0;
-  font-size: 0.6em;
-  line-height: normal;
-  opacity: 0.6;
-}
-
-.footerP {
-  margin-top: 0;
-}
-
 .icon {
   display: inline-block;
   vertical-align: -0.125em;

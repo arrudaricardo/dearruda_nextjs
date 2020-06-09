@@ -81,6 +81,7 @@
   width: auto;
   z-index: 100000;
 }
+
 #site-header {
   position: fixed;
   z-index: 1;
