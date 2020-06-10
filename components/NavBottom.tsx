@@ -16,7 +16,7 @@ export default function NavBottom({hasPosts}: Props) {
           </div>
           { hasPosts &&
             <nav className={style.nav}>
-              <a href={config.baseURL + '/posts/'}>Posts</a>
+              <a href={config.baseURL + '/posts'}>Posts</a>
             </nav>
           }
         </div>
