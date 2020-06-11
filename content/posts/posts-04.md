@@ -120,7 +120,9 @@ Since we can apply using the **one click** the script should be simple:
 })();
 ```
 
+
 Final result:
+
 ![gif](https://media.giphy.com/media/KBOvyqVMQMBKkOtw7n/giphy.gif)
 
 
