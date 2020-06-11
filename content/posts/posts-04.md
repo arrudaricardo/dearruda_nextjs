@@ -11,7 +11,7 @@ Since over 90% of large companies use Applicant Tracking Systems [1],
 your resume or application is scanned through a bot and pre-selected by some algorithm, for that we can do the same as the applicant, make a bot.
 
 We could scrap some job posting using a powerful framework as [ scrapy ]( https://scrapy.org/ ) or use [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) +  [request](https://requests.readthedocs.io/en/master/).
-However if the website is a [SPA](https://en.wikipedia.org/wiki/Single-page_application) or heavily use JavaScript we need to render the page before scrapping in this case we could use [selenium](https://selenium-python.readthedocs.io/) or the javascript conterpat [puppeteer](https://pptr.dev/), but since you probably just want a quick-and-dirty bot to apply for as many jobs that fit your requirement I recommend use the chrome plugin [tampermonkey](https://tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for firefox as a [UserScript](https://en.wikipedia.org/wiki/Userscript) manager.
+However if the website is a [SPA](https://en.wikipedia.org/wiki/Single-page_application) or heavily use JavaScript we need to render the page before scrapping in this case we could use [selenium](https://selenium-python.readthedocs.io/) or the JavaScript counterpart [puppeteer](https://pptr.dev/), but since you probably just want a quick-and-dirty bot to apply for as many jobs that fit your requirement I recommend use the chrome plugin [tampermonkey](https://tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for firefox as a [UserScript](https://en.wikipedia.org/wiki/Userscript) manager.
 
 As exemple we are going to apply for jobs at [cwjobs](https://www.cwjobs.co.uk) for all the jobs matching the search query.
 
@@ -35,7 +35,10 @@ The script is a plain javascript file, with access to the page [DOM](https://dev
 
 Since we can't open a new tab using the browser API we need to use TamperMonkey function to open a new tab:
 ```userscript
+// ==UserScript==
 // @grant        GM_openInTab
+// ==UserScript==
+
 ```
 
 ```javascript
