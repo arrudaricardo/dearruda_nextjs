@@ -1,5 +1,5 @@
 ---
-title: Applying for 1000 jobs/hour
+title: Applying for 1000 jobs per hour
 description: Use Userscript to automate job applications
 author: "Ricardo de Arruda"
 date: 2020-06-11
