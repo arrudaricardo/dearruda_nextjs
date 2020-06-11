@@ -5,12 +5,12 @@ import Layout from '../../components/layout'
 import NavBottom from '../../components/NavBottom'
 import Footer from '../../components/Footer'
 import style from '../../styles/post.module.css'
+import Share from '../../components/ShareFeather'
 import { author, footerCopyright, baseURL } from '../../config.json'
 import { Posts, getPosts, postsExist } from '../../lib/postHelper'
 
-function Atag(props:{href: string, children: any}) {
-  const {value} = props.children[0].props
-  console.log(value, props.href)
+function Atag(props: { href: string, children: any }) {
+  const { value } = props.children[0].props
   return (<a className={style.link} href={props.href}> {value} </a>)
 }
 
@@ -30,15 +30,15 @@ interface Post {
   hasPosts: boolean
 }
 
-//TODO: change color of a tag
 export default function PostTemplate({ post, hasPosts, footer }: Post) {
   return (
     <Layout title={post.frontmatter.title!} >
       <>
+        <Share title={post.frontmatter.title} />
         <div className={style.root}>
           <h1>{post.frontmatter.title}</h1>
           <ReactMarkdown source={post.content} renderers={{ code: CodeBlock, link: Atag }} />
-            <Footer footer={footer} display='relative' />
+          <Footer footer={footer} display='relative' />
         </div>
         <NavBottom hasPosts={hasPosts} />
       </>
