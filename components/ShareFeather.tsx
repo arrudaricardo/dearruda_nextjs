@@ -13,22 +13,22 @@ export default function ShareFeather({ title = '' }: Props) {
     let url;
     switch (media) {
       case 'facebook':
-        url = `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}&t=${title}`
+        url = `https://www.facebook.com/sharer.php?u=${encodeURIComponent(window.location.href)}&t=${title}`
         window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600')
         break;
 
       case 'linkedin':
-        url = `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`
+        url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`
         window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600')
         break;
 
       case 'twitter':
-        url = `https://twitter.com/share?url=${encodeURI(window.location.href)}&via=TWITTER_HANDLE&text=${encodeURI(title)}`
+        url = `https://twitter.com/share?url=${encodeURIComponent(window.location.href)}&via=TWITTER_HANDLE&text=${encodeURI(title)}`
         window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600')
         break;
 
       case 'whatsapp':
-        url = `https://wa.me/?text=${encodeURI(`Check this: ${window.location.href}`)}`
+        url = `https://wa.me/?text=${encodeURIComponent(`Check this: ${window.location.href}`)}`
         window.open(url)
         break;
 

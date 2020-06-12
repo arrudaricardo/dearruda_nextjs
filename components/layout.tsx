@@ -8,11 +8,12 @@ export type Props = {
   title: string;
 };
 
-const Layout = ({ children, title, mainStyle}: Props) => {
+const Layout = ({ children, title, mainStyle }: Props) => {
   return (
     <div className={styles.body}>
       <Head>
         <title>{title}</title>
+        <meta property="og:title" content={title} />
       </Head>
       <main className={mainStyle ?? styles.main}>
         {children}

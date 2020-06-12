@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import { GetStaticProps } from 'next'
+import Head from "next/head";
 import Prism from 'prismjs'
 import Layout from '../../components/layout'
 import NavBottom from '../../components/NavBottom'
@@ -34,6 +35,9 @@ export default function PostTemplate({ post, hasPosts, footer }: Post) {
   return (
     <Layout title={post.frontmatter.title!} >
       <>
+        <Head>
+          {post.frontmatter.description && <meta property="og:description" content={post.frontmatter.description} />}
+        </Head>
         <Share title={post.frontmatter.title} />
         <div className={style.root}>
           <h1>{post.frontmatter.title}</h1>
