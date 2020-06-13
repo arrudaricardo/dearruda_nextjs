@@ -148,5 +148,10 @@ state *setTable* to X or O:
         return newTable
     })())}
 ```
-You can test the game [here](https://codesandbox.io/s/github/arrudaricardo/tic-tac-toe-react-hook/tree/master/?fontsize=14
-).
+<iframe
+    src="https://codesandbox.io/embed/github/arrudaricardo/tic-tac-toe-react-hook/tree/master/?autoresize=1&fontsize=14&hidenavigation=1&theme=dark"
+    style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+    title="tic-tac-toe"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>

@@ -41,7 +41,7 @@ export default function PostTemplate({ post, hasPosts, footer }: Post) {
         <Share title={post.frontmatter.title} />
         <div className={style.root}>
           <h1>{post.frontmatter.title}</h1>
-          <ReactMarkdown source={post.content} renderers={{ code: CodeBlock, link: Atag }} />
+          <ReactMarkdown escapeHtml={false} source={post.content} renderers={{ code: CodeBlock, link: Atag }} />
           <Footer footer={footer} display='relative' />
         </div>
         <NavBottom hasPosts={hasPosts} />

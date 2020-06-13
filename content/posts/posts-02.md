@@ -186,5 +186,11 @@ let selectedRobots = []
 ![selection](https://thepracticaldev.s3.amazonaws.com/i/7nhai074qh74sumjg7k8.gif)
 
 After trying some huge iteration (10^5), that took some time ... I think I found my answer for the question, however I wont give any spoiler, be welcome to try for yourself at:
+<iframe
+    src="https://codesandbox.io/embed/trashrobot-5ie87?fontsize=14&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+    title="trashrobot"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 [trashcollectorrobot.netlify.com](https://trashcollectorrobot.netlify.com/)
