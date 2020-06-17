@@ -1,8 +1,13 @@
 .root {
-  margin: 5%;
-  padding-bottom: 3rem;
+    /* font-size: .8rem; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: calc(33% - 140px);
+    margin-right: calc(33% - 140px);
+    padding-bottom: 3rem;
+    text-align: justify;
 }
 
 .link {
-  color:#8cd1ff;
+    color:#8cd1ff;
 }
