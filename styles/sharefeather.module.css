@@ -3,8 +3,8 @@
   position: fixed;
   margin: 0.6rem;
   cursor: pointer;
+  user-select: none;
 }
-
 
 .feather {
   filter: opacity(40%) invert(100%);
