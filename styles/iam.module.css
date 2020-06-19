@@ -8,7 +8,7 @@
   font-size: 20px;
   line-height: 25px;
   color: #c6cddb;
-  padding-bottom: .3rem;
+  padding: calc(0.1em + 0.4vw) 0 calc(0.3em + 0.2vw);
 }
 .list {
   display: flex;

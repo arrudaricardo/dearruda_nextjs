@@ -22,7 +22,7 @@
 .posts {
   display: block;
   text-align: center;
-  margin-top: .5em;
+  margin-top: calc(.1em + 0.1vw);
   line-height: normal;
   font-size: 1.1em;
   font-style: bold;
