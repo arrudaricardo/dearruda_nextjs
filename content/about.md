@@ -1,6 +1,6 @@
 ---
 title: About me
-date: 2019-05-30T18:52:06.000+00:00
+date: 2020-05-30T18:52:06.000+00:00
 
 ---
 # Ricardo de Arruda
@@ -32,11 +32,14 @@ date: 2019-05-30T18:52:06.000+00:00
 
 ## Work Experience
 
-#### Student Desk Worker/Resident Assistance - University of Central Oklahoma
+#### Technical Support Specialist/Automation Specialist
 
-* Edmond, OK, Oklahoma - 2015
-* Providing general customer service for residents
-* Desk Assistants, help resident
+* Accenture
+* Bucharest, Romania - 2018
+* Automated solutions for software processes in Python/VBA
+* Managing ticketed query system
+* Providing technical support for external Client
+
 
 #### Trainee Python Developer
 
@@ -46,13 +49,11 @@ date: 2019-05-30T18:52:06.000+00:00
 * Monitoring system performance and troubleshooting issues
 * Ensuring security and efficiency of IT infrastructure
 
-#### Technical Support Specialist/Automation Specialist
+#### Student Desk Worker/Resident Assistance - University of Central Oklahoma
 
-* Accenture
-* Bucharest, Romania - 2018
-* Automated solutions for software processes in Python/VBA
-* Managing ticketed query system
-* Providing technical support for external Client
+* Edmond, OK, Oklahoma - 2015
+* Providing general customer service for residents
+* Desk Assistants, help resident
 
 ***
 
@@ -90,5 +91,7 @@ date: 2019-05-30T18:52:06.000+00:00
 
 * Portuguese - Mother tongue
 * English - Fluent
-* Italian - Intermediary
+* Italian - Basic
 * Spanish - Basic
+
+
